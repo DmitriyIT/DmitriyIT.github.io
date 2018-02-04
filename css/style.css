@@ -31,6 +31,10 @@ header {
 .header-button-box {
 	max-width: 212px;
 }
+.header-button-box a {
+	display: inline-block;
+	text-decoration: none;
+}
 .header-button {
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
@@ -42,6 +46,9 @@ header {
 	margin-top: 33px;
 	margin-bottom: 0;
 	padding: 17px 57px 19px 55px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 }
 .header-button-small-text {
 	text-align: center;
@@ -132,13 +139,18 @@ footer {
 .footer-back-block p {
 	margin-bottom: 11px;
 }
-.footer-back-block button {
+.footer-back-block a {
+	display: inline-block;
+	text-decoration: none;
 	background: transparent;
 	border-radius: 50px;
 	color: #fff;
 	font-size: 18px;
 	padding: 11px 42px;
 	border: 1px solid #ffffff;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 }
 
 
@@ -189,8 +201,13 @@ footer {
 
 
 
-
-
+.header-button:hover {
+	box-shadow: none;
+}
+.footer-back-block a:hover {
+	color: #3a7dfd;
+	background-color: #fff;
+}
 
 
 

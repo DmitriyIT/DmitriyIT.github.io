@@ -20,7 +20,7 @@
 	<!-- Подключаем наш файл со стилями, который находится в папке css-->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-
+	<link rel="stylesheet" href="css/animate.css">
 	<title>Портфолио</title>
 </head>
 <body>
@@ -28,18 +28,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<div class="header-image">
+					<div class="header-image wow fadeInLeftBig" data-wow-delay="0.1s">
 						<img src="img/mac_img.png" alt="не загрузилось">
 					</div>
 				</div>
 				<div class="col-lg-5">
-					<p class="header-pretitle">Веб-разработчик</p>
-					<h1 class="header-title">Дмитрий Баранов</h1>
-					<p class="header-subtitle">Верстка на HTML/CSS <br>
+					<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Дмитрий Баранов</h1>
+					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 					Разработка сайтов под ключ</p>
 					<div class="header-button-box">
-						<button class="header-button">Связаться</button>
-						<p class="header-button-small-text">*Это бесплатно</p>
+						<a href="https://vk.me/id41835869" class="header-button wow fadeInRightBig" data-wow-delay="0.4s">Связаться</a>
+						<p class="header-button-small-text wow fadeInRightBig" data-wow-delay="0.5s">*Это бесплатно</p>
 					</div>
 				</div>
 			</div>
@@ -90,16 +90,16 @@
 				<div class="col-lg-4">
 					<div class="footer-social-block">
 						<p>Подпишитесь:</p>
-						<a href="#"><img src="img/vk_logo.png" alt=""></a>
-						<a href="#"><img src="img/fb_logo.png" alt=""></a>
-						<a href="#"><img src="img/tg_logo.png" alt=""></a>
-						<a href="#"><img src="img/yt_logo.png" alt=""></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://vk.com/id41835869"><img src="img/vk_logo.png" alt=""></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img src="img/fb_logo.png" alt=""></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="#"><img src="img/tg_logo.png" alt=""></a>
+						<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img src="img/yt_logo.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="footer-back-block">
 						<p>Напишите мне:</p>
-						<button>Написать</button>
+						<a href="https://vk.me/id41835869" >Написать</a>
 					</div>
 				</div>
 			</div>
@@ -107,5 +107,10 @@
 		</div>
 		<!-- /.container -->
 	</footer>
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
