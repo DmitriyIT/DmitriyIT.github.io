@@ -1,137 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<!-- Важная техническая информация для браузера -->
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- meta для соцсетей -->
-   <meta property="og:url" content="">
-   <meta property="og:type" content="website">
-   <meta property="og:title" content="Дмитрий Баранов - создание приложеинй IOS, разработка НС, вебсайтов">
-   <meta property="og:image" content="img/main-bg.jpg">
-   <meta property="og:description" content="Разработка ">
-   <meta property="og:site_name" content="Портфолио Баранов Дмитрий">
-   <meta property="article:author" content="Дмитрий Баранов">
-   <!-- заголовок сайта -->
-	<title>Дмитрий Баранов - Портфолио</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/fontello.css">
-	<link rel="stylesheet" href="css/fontello-embedded.css">
-	<link href="css/style.css" rel="stylesheet">
-	<!-- Фавиконка -->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<!-- Информация об Авторе и описание проекта -->
+	<meta name="description" content="">
+	<meta name="auyhor" content="">
+
+	<!-- Иконка, которая будет на вкладке в браузере -->
+	<link rel="icon" href="/favicon.ico">
+	<!-- Заголовок на вкладке в браузере -->
+	<title>Порфолио</title>
+
+	<!-- шрифты от гугл -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<!-- Подключаем наш файл со стилями, который находится в папке css-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+	<title>Портфолио</title>
 </head>
-
 <body>
-	<div class="main">
-		<div class="main-overlay"></div>
-		<div class="wrapper">
-			<div class="main-header">
-				<h1>Дмитрий Баранов</h1>
-				<div class="main-line"></div>
-				<p>Верстка на HTML и CSS <br> Разработка IOS приложений <br> Работа с нейросетями</p>
-			</div>
-		</div>
-		<a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
-	</div>
-	
-	<div class="portfolio" id="portfolio">
-		<div class="container">
-			<h2 class="section-header">Портфолио</h2>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="portfolio-block"></div>
-					<img src="img/portfolio/ios1.jpg" alt="Работа №1">
-					<a data-toggle="modal" data-work='work-1' href="#work">смотреть работу</a>
-				</div>
-				<div class="col-md-4">
-					<div class="portfolio-block"></div>
-					<img src="img/portfolio/ios4.jpg" alt="Работа №2">
-					<a data-toggle="modal" data-work='work-2' href="#work">смотреть работу</a>
-				</div>
-				<div class="col-md-4">
-					<div class="portfolio-block"></div>
-					<img src="img/portfolio/wb1.jpg" alt="Работа №3">
-					<a data-toggle="modal" data-work='work-3' href="#work">смотреть работу</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="portfolio-block"></div>
-					<img src="img/portfolio/wb2.jpg" alt="Работа №4">
-					<a data-toggle="modal" data-work='work-4' href="#work">смотреть работу</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer">
+	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<strong>Дмитрий Баранов</strong>
-					<p>Разработка сайтов<br>под ключ</p>
-				</div>
-				<div class="col-md-6">
-					<strong>Подпишитесь</strong>
-					<div class="social-links">
-						<a href="https://vk.com/id41835869"><i class="icon-vk"></i></a>
-						<a href="https://www.instagram.com/dmitriybaranovv/"><i class="icon-instagram"></i></a>
-						<a href="#"><i class="icon-twitter"></i></a>
+				<div class="col-lg-7">
+					<div class="header-image">
+						<img src="img/mac_img.png" alt="не загрузилось">
 					</div>
 				</div>
-				<div class="col-md-3">
-					<strong>Напишите мне</strong>
-					<a href="https://vk.com/im?sel=41835869" class="offer-btn">Заказать сайт</a>
+				<div class="col-lg-5">
+					<p class="header-pretitle">Веб-разработчик</p>
+					<h1 class="header-title">Дмитрий Баранов</h1>
+					<p class="header-subtitle">Верстка на HTML/CSS <br>
+					Разработка сайтов под ключ</p>
+					<div class="header-button-box">
+						<button class="header-button">Связаться</button>
+						<p class="header-button-small-text">*Это бесплатно</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
+	
+	<section class="portfolio">
+		<div class="container">
+			<div class="portfolio-block">
+				<h3 class="portfilio-title">Портфолио</h3>
+				<p class="portfilio-subtitle">Мои работы</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="portfolio-col1">
+							<img src="img/portfolio1.png" alt="">
+							<h3>внутренний университет «Газпром нефти»</h3>
+							<p>У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
+							<a href="">Смотреть работу</a>
+						</div>
+					</div>
+					<!-- /.col-6 -->
+					<div class="col-lg-6">
+						<div class="portfolio-col2">
+							<img src="img/portfolio2.png" alt="">
+							<h3>Сайт платежной системы «Мир»</h3>
+							<p>Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
+							<a href="">Смотреть работу</a>
+						</div>
+					</div>
+					<!-- /.col-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.portfolio-block -->
+		</div>
+		<!-- /.container -->
+	</section>
 
-	<!-- Всплывающее окно -->
-	<div class="modal fade bd-example-modal-lg" id="work" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	      	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	      	<h4 class="modal-title">Описание проекта</h4>
-	      </div>
-	      <div class="modal-body">
-	      	
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script>
-		$(function() {
-			var link = $('a[data-toggle="modal"]');
-			link.on('click', function(event) {
-				var work = $(this).attr('data-work');
-				var modal = $('.modal');
-				modal.find('.modal-body').load(work + '.html');
-			});
-		});
-		
-	</script>
-	<script>
-		$(document).ready(function() {
-			$(".slowly").on("click", function(event) {
-				event.preventDefault();
-				var id = $(this).attr('href');
-				var top = $(id).offset().top;
-				$('body,html').animate({scrollTop: top}, 800);
-			});
-		});
-	</script>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="footer-about">
+						<h4>Дмитрий Баранов</h4>
+						<p>Разработка сайтов под ключ</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer-social-block">
+						<p>Подпишитесь:</p>
+						<a href="#"><img src="img/vk_logo.png" alt=""></a>
+						<a href="#"><img src="img/fb_logo.png" alt=""></a>
+						<a href="#"><img src="img/tg_logo.png" alt=""></a>
+						<a href="#"><img src="img/yt_logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer-back-block">
+						<p>Напишите мне:</p>
+						<button>Написать</button>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
 </body>
 </html>
