@@ -1,0 +1,63 @@
+.lightzoom img {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+/* For bg color */
+.photo_galery .wrap { display: inline-block; position: relative; overflow: hidden;}
+.photo_galery .wrap:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,169,183,.5);  opacity: 0; }
+.photo_galery .wrap:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; }
+.photo_galery .wrap:hover:before, .wrap:hover:after { opacity: 1; }
+
+.left_photo span {
+	width: 270px;
+	height: 450px;
+}
+.left_photo {
+	display: inline-block;
+	float: left;
+	width: 270px;
+	height: 450px;
+	margin-right: 15px;
+	background-image: url('img/');
+}
+.right_tl span {
+	width: 280px;
+	height: 200px;	
+}
+.right_tl {
+	display: inline-block;
+	width: 280px;
+	height: 200px;	
+	margin-bottom: 15px;
+}
+.right_tr span {
+	width: 280px;
+	height: 200px;	
+}
+.right_tr {
+	display: inline-block;
+	width: 280px;
+	height: 200px;	
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.right_bl span {
+	width: 350px;
+	height: 230px;
+}
+.right_bl {
+	display: inline-block;
+	width: 350px;
+	height: 230px;
+}
+.right_br span {
+	width: 210px;
+	height: 230px;
+}
+.right_br {
+	display: inline-block;
+	width: 210px;
+	height: 230px;
+	margin-left: 15px;
+}

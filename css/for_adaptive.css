@@ -1,0 +1,644 @@
+@media screen and (min-width:577px) and (max-width:1080px) {
+	header .container {
+		width: 960px;
+		min-width: 960px;
+		max-width: 1300px;
+	}
+	.wrap_for_img {
+		width: 100vw;
+		min-width: 960px;
+	}
+	.choose_town_modal form input {
+		width: 50%;
+	}
+	.top, .aboute_teachers, .what_is_mc, .aboute_video, .wrap_gallery_reviews, .price, .time_table, .more_questions, .contacts {
+		min-width: 960px;
+	}
+	.top .container, .aboute_teachers .container, .what_is_mc .container, .aboute_video .container, .wrap_gallery_reviews .container, .price .container, .time_table .container, .more_questions .container, .contacts .container {
+		max-width: 960px;
+	}
+	.wrap_OGE .yellow_div {
+		min-width: 960px;
+	}
+
+	.awd1 {
+		top: 480px !important;
+		right: 55px !important;
+	}
+	.awd2 {
+		right: 220px !important;
+	}
+	.awd8 {
+		width: 80px;
+		top: 550px !important;
+		right: 480px !important;
+	}
+	.awd9 {
+		width: 40px;
+	}
+	.awd10 {
+		width: 110px;
+		top: 660px !important;
+		right: 380px !important;
+	}
+	.awd5, .awd7 {
+		display: none !important;
+	}
+	
+	.book_combain {
+		margin-left: -65px;
+	}
+	.book_lines_top {
+		width: 250px;
+		left: 25px;
+	}
+	.circl_book {
+		top: 430px;
+		left: 53px;
+		width: 217px;
+	}
+	.mc_titel2 {
+		font-size: 22px;
+	}
+	.mc_text_bottom {
+		max-width: 296px;
+	}
+	.tt_wrap_col, .tt_wrap_form {
+		flex: 0 0 99% !important;
+		max-width: 99% !important;
+	}
+	.l_confidence {
+		margin-top: 10px;
+	}
+	.contacts .map {
+		padding-left: 90px;
+	}
+}
+@media screen and (min-width:577px) and (max-width:1000px) {
+	.top {
+		padding-left: 15px !important;
+	}
+}
+
+@media screen and (min-width:1079px) and (max-width:1200px) {
+	.tt_wrap_col, .tt_wrap_form {
+		flex: 0 0 99% !important;
+		max-width: 99% !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.what_is_mc .container {
+		max-width: 1150px;
+	}
+	.tt_form {
+		min-width: 920px;
+		/*overflow: scroll;*/
+	}
+	.l_confidence {
+		margin-top: 10px;
+	}
+	.contacts .map {
+		padding-left: 90px;
+	}
+}
+@media (max-width: 1252px) {
+	.awd1 {
+		width: 400px;
+		top: 220px;
+	}
+	.awd2 {
+		right: 200px;
+		width: 180px;
+		top: 250px !important;
+	}
+	.button_live_v {
+		top: 82vh;
+		right: 105px;
+	}
+	.first_form_reg {
+		margin-top: 7vh;
+	}
+}
+@media (max-width: 577px) {
+	.img_logo img {
+		width: 44px;
+		height: 34px;
+	}
+	.phone_nav {
+		font-size: 14px;
+	}
+	.big_text {
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.bottom_big_text {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 24px;
+		font-family: "Helvetica Neue Cyr";
+		max-width: 230px;
+		margin-top: 2vh;
+	}
+	.top {
+		padding-left: 0 !important;
+	}
+	.first_left_top {
+		margin-left: 14px;
+		margin-top: 50px;
+	}
+	.first_form_reg {
+		margin-top: 25vh;
+	}
+	.first_form_reg input {
+		width: 100%;
+		color: #b6b6b6;
+		font-family: "Helvetica Neue Cyr";
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 16px;
+	}
+	.first_form_reg button {
+		width: 100%;
+	}
+	.wrap_for_img {
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		overflow: hidden;
+	}
+	.awd1 {
+		width: 212px;
+		top: 450px !important;
+		right: -20px !important;
+	}
+	.awd2 {
+		top: 342px !important;
+		right: 24px !important;
+		width: 125px;
+		height: 350px;
+	}
+	.awd3 {
+		width: 130px;
+		height: 336px;
+		top: 190px !important;
+		right: -24px !important;
+	}
+	.awd5 {
+		width: 17px;
+		top: 457px !important;
+		right: 305px !important;
+	}
+	.awd7 {
+		width: 12px;
+		top: 226px !important;
+		left: 19px !important;
+	}
+	.awd8 {
+		width: 60px;
+		right: 238px !important;
+		top: 520px !important;
+	}
+	.awd9 {
+		display: none !important;
+		width: 31px;
+		top: 415px !important;
+		right: 125px !important;
+	}
+	.awd10 {
+		display: none !important;
+		width: 85px;
+		top: 533px !important;
+		right: 20px !important;
+	}
+	.awd11, .awd6, .awd4, .ab_video_r_dot {
+		display: none !important; 
+	}
+	.text_aboute_us p {
+		font-size: 30px;
+	}
+	.text_aboute_us img {
+		width: 15px;
+	}
+	.ab_video_circle {
+		width: 100px;
+		height: 100px;
+		right: -50px;
+		top: -70px;
+		left: auto;
+	}
+	.ab_video_l_dot {
+		width: 100px;
+		top: 250px;
+		left: -50px;
+	}
+	.block_text_aboute_bottom {
+		margin-bottom: 40px;
+	}
+	.aboute_teachers {
+		overflow: hidden;
+	}
+	.block_text_aboute_bottom img {
+		left: auto;
+		height: 160px;
+		top: 80px;
+		right: -100px;
+	}
+	.block_about_school {
+		text-align: center;
+	}
+	.block_about_school > div {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.teacher_title p {
+		font-size: 24px;
+		width: 240px;
+		line-height: 39px;
+	}
+	.teacher_title img {
+		max-width: 16px;
+		margin-bottom: 50px;
+	}
+	.teachers_carousel_offset {
+		/*padding: 10px !important;*/
+	}
+	
+	.mc_titel {
+		margin-bottom: 80px;
+	}
+	.mc_titel p {
+		width: 70%;
+		line-height: 35px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.mc_titel img {
+		width: 14px;
+		margin-bottom: 40px;
+	}
+	.book_combain > img {
+		height: 250px;
+		left: -23px !important;
+	}
+	.book_lines_top, .circl_book {
+		display: none;
+	}
+	.mc_small_line {
+		position: absolute;
+		top: -28px !important;
+		left: 75px !important;
+		width: 280px;
+	}
+	.mc_small_line_text {
+		position: absolute;
+		top: -37px;
+		right: 23px;
+		color: #602272;
+		font-family: "Muller Bold";
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 24.06px;
+	}
+	.mc_small_line img {
+		width: 200px;
+		height: 45px;
+	}
+	.mc_middle_line {
+		position: absolute;
+		top: 38px !important;
+		left: 96px !important;
+	}
+	.mc_middle_line_text {
+		width: 178px;
+		top: -16px;
+		right: -44px;
+		font-size: 15px;
+	}
+	.mc_middle_line img {
+		width: 200px;
+		height: auto;
+	}
+	.mc_big_line {
+		top: 89px !important;
+		left: 16px !important;
+	}
+	.mc_big_line_text {
+		width: 154px;
+		right: -38px;
+		top: 21px;
+		font-size: 15px;
+	}
+	.mc_big_line img {
+		width: 239px;
+	}
+	.mc_right {
+		margin-top: 50px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom: 35px;
+	}
+	.mc_titel2 {
+		color: #f4f586;
+		font-family: "Muller Bold";
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	.photo_awd {
+		width: 100%;
+		/*padding-left: 25px !important;
+		padding-right: 25px !important;*/
+	}
+	.photo_awd > img {
+		display: none;
+	}
+	
+	.photo_galery .row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	/*.left_photo img {
+		width: 100% !important;*/
+		/*height: 100% !important;
+	}*/
+	.left_photo {
+		display: inline-block;
+		float: left;
+		width: 100% !important;
+		height: 181px !important;
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		overflow: hidden;
+		margin-bottom: 3px;
+	}
+	/*.right_tl img {
+		width: 100%;
+		height: auto;
+	}*/
+	.right_tl {
+		display: inline-block;
+		width: calc(50% - 6px);
+		height: 98px;
+		margin-left: 0px;
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+	/*.right_tr img {
+		width: 100%;
+		height: auto;	
+	}*/
+	.right_tr {
+		display: inline-block;
+		width: calc(50% - 3px);
+		height: 98px;	
+		margin-left: 6px;
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+	/*.right_bl img {
+		width: 100%;
+		height: auto;
+	}*/
+	.right_bl {
+		display: inline-block;
+		width: calc(65% - 6px);
+		height: 110px;
+		overflow: hidden;
+	}
+	/*.right_br img {
+		width: 100%;
+		height: auto;
+	}*/
+	.right_br {
+		display: inline-block;
+		width: calc(35% - 3px);
+		height: 110px;
+		margin-left: 6px;
+		overflow: hidden;
+	}
+	.left_photo span {
+		width: 100%;
+		height: 100%;
+	}
+	.right_tl span {
+		width: 100%;
+		height: 100%;	
+	}
+	.right_tr span {
+		width: 100%;
+		height: 100%;	
+	}
+	.right_bl span {
+		width: 100%;
+		height: 100%;
+	}
+	.right_br span {
+		width: 100%;
+		height: 100%;
+	}
+	/*** 5view /.photo_galery ***/
+
+	.wrap_EGE {
+		margin-bottom: -287px;
+	}
+	.time_table {
+		padding-top: 317px;
+	}
+	.right_div_EGE_bottom_text {
+		font-size: 16px;
+	}
+	.right_div_EGE > img, .left_div_OGE > img {
+		display: none;
+	}
+	
+	.q_left_div {
+		font-size: 17px;
+	}
+	.q_right_div {
+		font-size: 16px;
+	}
+	.q_right_div form textarea {
+		margin-bottom: 10px;
+	}
+	.q_right_div form button {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.l_confidence {
+		margin-top: 0;
+		font-size: 13px;
+	}
+	#map_google {
+		margin-left: 0px;
+	} 
+}
+@media (max-width: 420px) {
+	.table_choose_town {
+		flex-wrap: nowrap;
+		overflow-y: scroll;
+		height: 55vh;
+	}
+	.but_lk {
+		padding-left: 10px;
+	}
+	.cht_titel {
+		font-size: 26px;
+		margin-top: 58px;
+	}
+	.choose_town_modal form input {
+		font-size: 14px;
+		width: 90%;
+	}
+	.choose_town_modal form button {
+		margin-left: 0;
+		margin-top: 15px;
+		width: 90%;
+		font-size: 15px;
+		line-height: 46px;
+		height: 45px;
+	}
+	.choose_town_modal > div > button {
+		display: block;
+		margin-top: 20px;
+		margin-right: 23px;
+	}
+	.choose_town_modal > div > button > span {
+		font-size: 2.5rem;
+		color: #fff;
+	}
+	.choose_town_modal > div .close {
+		opacity: 0.87;
+	}
+	.take_lesson_modal {
+		position: fixed;
+		top: 10px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+	}
+	.reviews_block .bg_rv  {
+		display: block;
+		position: absolute;
+		top: -77px;
+		right: 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.awd1 {
+		width: 150px;
+		top: 415px !important;
+		right: -24px !important;
+	}
+	.awd2 {
+		top: 335px !important;
+		right: 23px !important;
+		width: 70px;
+		height: 220px;
+	}
+	.awd3 {
+		width: 117px;
+		height: 300px;
+		top: 190px !important;
+		right: -20px !important;
+	}
+	.awd5 {
+		width: 12px;
+		top: 445px !important;
+		right: 260px !important;
+	}
+	.awd7 {
+		width: 11px;
+		top: 216px !important;
+		left: 22px !important;
+	}
+	.awd8 {
+		display: none;
+		width: 65px;
+		right: 215px !important;
+	}
+	.awd9 {
+		width: 30px;
+		top: 361px !important;
+		right: 61px !important;
+	}
+	.awd10 {
+		display: none !important;
+	}
+	.first_left_top {
+		margin-top: 20px;
+	}
+	.big_text {
+		font-size: 21px;
+		width: 274px;
+	}
+	.first_form_reg {
+		margin-top: 15vh;
+	}
+	.OGE_top, .OGE_top .right_div {
+		font-size: 17px;
+	}
+	.wrap_EGE {
+		margin-bottom: -307px;
+	}
+	.time_table {
+		padding-top: 340px;
+	}
+	.right_div_EGE_bottom_text {
+		font-size: 14px;
+	}	
+	.EGE_top, .EGE_top .right_div {
+		font-size: 17px;
+		color: #602272;
+	}
+	.EGE_top .left_div strong {
+		color: #602272;	
+	}
+	.add_for_se {
+		bottom: 10px !important;
+	}
+	.choose_town_modal {
+		min-height: 550px !important;
+	}
+	.take_lesson_modal form input, .take_lesson_modal form button {
+		width: 230px;
+	}
+	.what_is_mc {
+		padding-top: 18px;
+	}
+	.mc_titel p {
+		font-size: 24px;
+	}
+	.book_combain > img {
+		left: -27px !important;
+	}
+	.mc_small_line {
+		left: 70px !important;
+	}
+	.mc_small_line_text {
+		right: 46px;
+		font-size: 13px;
+	}
+	.mc_middle_line {
+		left: 80px !important;
+	}
+	.mc_middle_line_text {
+		width: 165px;
+		right: -30px;
+		font-size: 13px;
+	}
+	.mc_big_line {
+		top: 89px !important;
+		left: 10px !important;
+	}
+	.mc_big_line_text {
+		font-size: 14px;
+	}
+	.q_titel {
+		font-size: 23px;
+	}
+}

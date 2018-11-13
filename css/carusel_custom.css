@@ -1,0 +1,171 @@
+.carusel_div {
+  position: relative;
+  display: inline-block;
+  height: 410px;
+  width: 820px;
+  border-radius: 15px;
+  /*overflow-x: scroll;*/
+  overflow: hidden;
+}
+.scroll_div {
+  display: inline-block;
+  width: 5000px;
+  transition: margin-left 0.8s;
+}
+.elem_carusel {
+  display: inline-block;
+  vertical-align: top;
+}
+.but_left, .but_right {
+  display: inline-block;
+  width: 30px;
+  vertical-align: top;
+  text-align: center;
+  line-height: 330px;
+  /*margin-top: 30px;*/
+}
+.but_left {
+  padding-right: 10px;
+}
+.but_right {
+  padding-left: 10px;
+}
+
+@media (max-width: 575px) {
+  .teachers_carousel_offset {
+    padding: 0 !important;
+  }
+  .but_left {
+    width: 50%;
+    line-height: 60px;
+  }
+  .but_left img {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+  .but_right {
+    width: 50%;
+    line-height: 60px;
+  }
+  .but_right img {
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .teachers .elem_carusel {
+    margin-right: 10px;
+    width: 92vw;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f4f586;
+  }
+  .aboute_teacher {
+    
+  }
+  .card_teacher {
+    display: inline-block;
+    width: 48%;
+    border-radius: 20px;
+    margin-right: 12px;
+    overflow: hidden;
+    box-shadow: 0px 7px 14px 0px #007A71;
+  }
+  .image_of_teacher {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+    width: 45%;
+  }
+  .image_of_teacher img {
+    height: 100%;
+    width: auto;
+  }
+  .teacher_right_col {
+    display: inline-block;
+    width: 55%;
+    padding-top: 17px;
+    padding-right: 10px;
+    padding-left: 14px;
+  }
+  .vk_social {
+    float: right;
+    /*margin-right: 17px;*/
+  }
+  .vk_social img {
+    width: 30px;
+    height: auto;
+  }
+  .teacher_right_col .name {
+    color: #602272;
+    font-family: "Muller Bold";
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+  .lesson {
+    margin-top: 30px;
+    color: #494949;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .t_aboute_text {
+    word-wrap: break-word;
+    color: #494949;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .reviews_block {
+    margin-left: 0px;
+  }
+  .reviews_block .elem_carusel {
+    height: 590px;
+    width: 92vw;
+    background-color: transparent;
+  }
+  .reviews_block .elem_carusel img {
+    display: block;
+    width: 92vw;
+    height: 92vw;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  .reviews_block a {
+    color: #2a00ff;
+    font-family: "Muller Bold";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 10px;
+    text-decoration: underline;
+  }
+  .reviews_block p {
+    margin-top: 17px;
+    color: #ffffff;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .price_titel {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 330px) {
+  .reviews_block .elem_carusel {
+    height: 560px;
+    width: 92vw;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width:413px) and (max-width:415px) {
+  .reviews_block .elem_carusel {
+    height: 605px;
+  }
+}
