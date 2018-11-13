@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta для соцсетей -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Квентин, школа ЕГЭ">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Успешная сдача егэ и огэ">
+    <meta property="og:site_name" content="Школа Квентин">
+    <!-- <meta property="article:author" content="Дмитрий Баранов"> -->
+    <!-- Заголовок сайта -->
+    <title>Квентин</title>
+
+   <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/custom_tooltip.css">
+	<link rel="stylesheet" href="css/carusel_custom.css">
+	<link rel="stylesheet" href="css/custom_select.css">
+	<link rel="stylesheet" href="css/animation_animate.css">
+	<link rel="stylesheet" href="css/altern_gallery.css">
+	<link rel="stylesheet" href="css/for_adaptive.css">
+
+
+	<link rel="stylesheet" href="css/add_fonts.css">
+
+   <!-- Фавиконка -->
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	
+  </head>
+  <body>
+	
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 head_lr">
+	  				<nav class="navbar navbar-expand-sm navbar-light">
+	  					<a href="#" class="img_logo wow rotateInDownRight" data-wow-delay="0.2s">
+	  						<img src="elems_of_design/logo_yellow.png" alt="">
+	  					</a>
+	  					<div class="tooltip_custom_adult">
+		  					<img src="elems_of_design/maps-and-flags.png" alt="" data-toggle="modal" data-target=".bd-example-modal-lg">
+		  					<p id="user-city" data-toggle="modal" data-target=".bd-example-modal-lg">Москва</p>
+		  					<div class="tooltip_custom tooltop_cst_bottom">
+		  						Это ваш город?  <br>
+		  						<button id="tooltip_town">Да</button>
+		  						<button data-toggle="modal" data-target=".bd-example-modal-lg">Нет</button>
+		  					</div>
+		  					<div class="choose_town">
+		  						
+		  					</div>
+		  					<p class="but_lk"> <a href="#">Личный кабинет</a></p>
+		  				</div>
+	  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="but_nuv">
+					    	<span class="navbar-toggler-icon"></span>
+					   </button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item nav-item-dis">
+									<a class="nav-link go_to" href="#aboute_school">О школе</a>
+								</li>
+								<li class="nav-item nav-item-dis">
+									<a class="nav-link go_to" href="#teachers">Преподаватели</a>
+								</li>
+								<li class="nav-item nav-item-dis">
+									<a class="nav-link go_to" href="#ph_gallery">Галерея</a>
+								</li>
+								<li class="nav-item nav-item-dis">
+									<a class="nav-link go_to" href="#reviews">Отзывы</a>
+								</li>
+								<li class="nav-item nav-item-dis">
+									<a class="nav-link go_to" href="#time_table">Расписание</a>
+								</li>
+								<li class="nav-item nav-item-dis">
+									<a class="nav-link go_to" href="#map">Карта</a>
+								</li>
+							</ul>
+		  				</div>
+					</nav>
+  					<a href="tel:+78142332211" class="phone_nav">+ 7 (900) 00-00-000</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Large modal -->
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+
+	<div class="modal fade bd-example-modal-lg add_for_se" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content choose_town_modal">
+	    	<div class="">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+	    		<div class="cht_titel">
+	    			Выбрать город
+	    		</div>
+	    		<form action="#">
+	    			<input type="text" placeholder="Начните вводить город" id="input_choose_town">
+	    			<button type="submit">ВЫБРАТЬ</button>
+	    		</form>
+				
+				<ul class="table_choose_town" id="table_choose_town">
+					<li> <a href="#"> Альметьевск </a> </li>
+ 					<li> <a href="#"> Пенза </a> </li>
+ 					<li> <a href="#"> Чебоксары </a> </li>
+ 					<li> <a href="#"> Уфа </a> </li>
+ 					<li> <a href="#"> Уфа </a> </li>
+ 					<li> <a href="#"> Первоуральск </a> </li>
+ 					<li> <a href="#"> Ханты-Мансийск </a> </li>
+ 					<li> <a href="#"> Белгород </a> </li>
+ 					<li> <a href="#"> Саранск </a> </li>
+ 					<li> <a href="#"> Екатеринбург </a> </li>
+ 					<li> <a href="#"> Ижевск </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Улан-Удэ </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Улан-Удэ </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Улан-Удэ </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Улан-Удэ </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Улан-Удэ </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Улан-Удэ </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Красноярск  </a> </li>
+ 					<li> <a href="#"> Ставрополь </a> </li>
+ 					<li> <a href="#"> Кемерово </a> </li>
+ 					<li> <a href="#"> Краснодар </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+ 					<li> <a href="#"> Рязань </a> </li>
+ 					<li> <a href="#"> Нижнекамск </a> </li>
+ 					<li> <a href="#"> Челябинск </a> </li>
+ 					<li> <a href="#"> Оренбург </a> </li>
+				</ul>
+	    	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="take_lesson_modal" style="display: none;">
+		<img src="elems_of_design/letter_modal_x.png" alt="" class="letter_modal_x">
+		<p class="titel_tl">Запишись на занятие!</p>
+		<!-- wow fadeInUp" data-wow-delay="0.2s" -->
+		<p class="text_tl">
+			<!--  wow fadeInUp" data-wow-delay="0.3s" -->
+			Адрес школыАдрес школыАдрес школы
+			Адрес школыАдрес школы	
+		</p>
+		<form action="#">
+			<input type="text" placeholder="Имя">
+			<input type="phone" placeholder="Телефон">
+			<button type="submit">ЗАПИСАТЬСЯ</button>
+		</form>
+		<img src="elems_of_design/Open_Book_modal.png" alt="" class="Open_Book_modal">
+	</div>
+
+	<div class="wrap_for_img">
+		<section class="many_bg_img" id="parallax_scene1">
+			<img src="elems_of_design/hockey.png" alt="" class="awd1" data-depth="0.2">
+			<img src="elems_of_design/hockey_bg_lines.png" alt="" class="awd2" data-depth="0.1">
+			<img src="elems_of_design/top_bg_lines.png" alt="" class="awd3">
+			<img src="elems_of_design/+_копия_2.png" alt="" class="awd4" data-depth="0.1">
+			<img src="elems_of_design/+_копия_2.png" alt="" class="awd5">
+			<img src="elems_of_design/+_копия_2.png" alt="" class="awd6">
+			<img src="elems_of_design/drob.png" alt="" class="awd7">
+			<img src="elems_of_design/y=_mx+_b_.png" alt="" class="awd8">
+			<img src="elems_of_design/ax=b_.png" alt="" class="awd9">
+			<img src="elems_of_design/ax2+bx+c=0.png" alt="" class="awd10">
+			<img src="elems_of_design/mouse.png" alt="" class="awd11" id="parallaxContainer">
+		</section>	
+	</div>
+	
+
+	<section class="top" id="parallax_scene">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 ">
+					<div class="first_left_top">
+						<img src="" alt="">
+						<div class="big_text wow fadeInUp" data-wow-delay="0.2s">
+							Лучшая подготовка <br> 
+							<span>к егэ и огэ</span>
+							в городе 
+						</div>
+						<div class="bottom_big_text wow fadeInUp" data-wow-delay="0.5s">
+							Успей записаться, <br> Первое занятие бесплатно!
+						</div>
+						<form action="#" class="first_form_reg">
+							<input class="" type="text" placeholder="Имя">
+							<input class="" type="text" placeholder="Телефон">
+							<button type="submit">Записаться</button>
+						</form>
+					</div>
+					<div class="first_left_bottom"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 offset-sm-9">
+					<div href="" class="button_live_v">
+						<img src="elems_of_design/but_live_letter-x.png" alt="" id="live_button_ex">
+						<p> Смотреть <br> Live - трансляция </p>
+						<img src="elems_of_design/but_live_play-arrow.png" alt="">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="aboute_video" id="aboute_school">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 offset-sm-2 ">
+					<div class="text_aboute_us">
+						<img src="elems_of_design/left_gr.png" alt="">
+						<p class="wow fadeInUp" data-wow-delay="0.5s">О НАС</p>
+						<img src="elems_of_design/right_gr.png" alt="">
+					</div>
+					<img src="elems_of_design/ab_video_l_dot.png" alt="" class="ab_video_l_dot">
+					<img src="elems_of_design/ab_video_r_dot.png" alt="" class="ab_video_r_dot">
+					<img src="elems_of_design/ab_video_circle.png" alt="" class="ab_video_circle">
+					<!-- <div class="embed-responsive embed-responsive-16by9 about_us_video">
+						<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/wBH0-pGje_o" frameborder="0" allowfullscreen></iframe>
+					</div> -->
+					
+					<div class="embed-responsive embed-responsive-16by9 about_us_video">
+						<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+						   <!-- <img src="img_f/review_3.png" style="cursor:pointer" /> -->
+						</div>
+						<iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/wBH0-pGje_o?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.aboute_video -->
+	
+	<section class="aboute_teachers" id="teachers">
+		<div class="container">
+			<div class="row block_text_aboute wow fadeInUp" data-wow-delay="0.5s">
+				<div class="col-sm-4">
+					<div class="">
+						Преподаватели школы Квентин — студенты, 
+						которые 2-4 года назад сдали ЕГЭ на 
+						максимальные баллы. Это умницы и умники, 
+						которым было жутко интересно в школе, они 
+						выжали из нее максимум и сейчас бороздят 
+						по просторам высших учебных заведений за 
+						поиском смысла жизни в научном, 
+						интеллигентном обществе.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="">
+						C нами ты узнаешь, где в жизни ты можешь 
+						встретить применения логарифма, 
+						производной, поймешь, кто и зачем установил 
+						стандарты ударения в словах, почему именно 
+						убийство Иваном Грозным своего сына стало 
+						причиной того, что сейчас Российская 
+						Федерация не занимает лидирующие позиции 
+						во всех спектрах жизни человечества.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="">
+						Мы расскажем тебе, что хотела сказать твоя 
+						школа, объясняя какие-то теоремы, постулаты, 
+						аксиомы и правила.Мы повысим твои навыки 
+						решения задач на ЕГЭ. Школа Квентин — это 
+						новый формат образования. Вместе с нашей 
+						командой преподавателей мы вытащим тебя 
+						из неизвестной рутины подготовки к ЕГЭ 
+						в огромных классах или с репетитором.
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="block_text_aboute_bottom wow fadeInUp" data-wow-delay="0.5s">
+						Тебе понравится получать знания. 
+						Мы будем всегда поддерживать связь, ибо 
+						только 30% твоей подготовки происходит на 
+						наших уроках, а остальные 70% ты будешь 
+						нарабатывать дома.
+						Это все ты узнаешь, когда познакомишься 
+						с активной работой наших групп в интернете. 
+						Мы ждем тебя.					
+						<img src="elems_of_design/ab_teachers_dot.png" alt="">
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="block_about_school">
+						<div class="wow fadeInUp" data-wow-delay="0.2s">
+							<img src="elems_of_design/ab_school_mortarboard.png" alt="">
+							<br>
+							ПРЕПОДАВАТЕЛИ СДАЛИ <br>
+							ЭГЕ НА 95-100 БАЛЛОВ
+						</div>
+						<div class="wow fadeInUp" data-wow-delay="0.2s">
+							<img src="elems_of_design/ab_school_calendar.png" alt="">
+							<br>
+							ПРОБНЫЕ ЭКЗАМЕНЫ <br>
+							КАЖДЫЕ ДВА МЕСЯЦА
+						</div>
+						<div class="wow fadeInUp" data-wow-delay="0.2s">
+							<img src="elems_of_design/ab_school_smartphone.png" alt="">
+							<br>
+							СВОЕ МОБИЛЬНОЕ <br>
+							ПРИЛОЖЕНИЕ
+						</div>
+						<div class="wow fadeInUp" data-wow-delay="0.2s">
+							<img src="elems_of_design/ab_school_computer.png" alt="">
+							<br>
+							ОНЛАЙН-ЗАНЯТИЯ ВНЕ <br>
+							ШКОЛЫ
+						</div>
+						<div class="wow fadeInUp" data-wow-delay="0.2s">
+							<img src="elems_of_design/ab_school_class.png" alt="">
+							<br>
+							НЕБОЛЬШИЕ ГРУППЫ <br>
+							СТУДЕНТОВ (4-6 ЧЕЛОВЕК)
+						</div>
+						<div class="wow fadeInUp" data-wow-delay="0.2s">
+							<img src="elems_of_design/ab_school_coffee.png" alt="">
+							<br>
+							УЮТНАЯ АТМОСФЕРА <br>
+							НА ЗАНЯТИЯХ
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="teachers_carousel_offset">
+					<div class="teacher_title">
+						<img src="elems_of_design/review_1.svg" alt="">
+						<p class="wow fadeInUp" data-wow-delay="0.2s">Наши преподаватели</p>
+						<img src="elems_of_design/review_2.svg" alt="">
+					</div>
+
+					<div class="but_left"><img src="elems_of_design/left.png" alt=""></div>
+					<div class="carusel_div teachers">
+						<div class="scroll_div">
+							<div class="elem_carusel">
+								<div class="image_of_teacher">
+									<img src="img/teachers.png" alt="">
+								</div>
+								<div class="teacher_right_col">
+									<a href="#" class="vk_social"><img src="elems_of_design/vk.png" alt=""></a>
+									<p class="lesson wow fadeInUp" data-wow-delay="0.2s">Химия</p>
+									<p class="name wow fadeInUp" data-wow-delay="0.2s">Гилемзянов Алмаз</p>
+									<p class="t_aboute_text wow fadeInUp" data-wow-delay="0.5s">
+										Разнообразный и богатый опыт 
+										новая модель организационной 
+										деятельности требуют 
+										определения и уточнения 
+										позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач. 
+									</p>
+								</div>
+							</div>
+							<div class="elem_carusel">
+								<div class="image_of_teacher">
+									<img src="img/teachers.png" alt="">
+								</div>
+								<div class="teacher_right_col">
+									<a href="#" class="vk_social"><img src="elems_of_design/vk.png" alt=""></a>
+									<p class="lesson wow fadeInUp" data-wow-delay="0.2s">Химия</p>
+									<p class="name wow fadeInUp" data-wow-delay="0.2s">Гилемзянов Алмаз</p>
+									<p class="t_aboute_text wow fadeInUp" data-wow-delay="0.5s">
+										Разнообразный и богатый опыт 
+										новая модель организационной 
+										деятельности требуют 
+										определения и уточнения 
+										позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач. 
+									</p>
+								</div>
+							</div>
+							<div class="elem_carusel">2</div>
+							<div class="elem_carusel">3</div>
+							<div class="elem_carusel">4</div>
+							<div class="elem_carusel">5</div>
+							<div class="elem_carusel">6</div>
+							<div class="elem_carusel">7</div>
+							<div class="elem_carusel">8</div>
+						</div>
+					</div>
+					<!-- /.carusel_div -->
+					<div class="but_right"><img src="elems_of_design/right.png" alt=""></div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.aboute_teachers -->
+
+	<section class="what_is_mc">
+		<div class="container">
+			<div class="row">
+				<div class="mc_titel">
+					<img src="elems_of_design/review_1.svg" alt="">
+					<p class="wow fadeInUp" data-wow-delay="0.2s">Что такое МАСТЕР-КЛАСС?</p>
+					<img src="elems_of_design/review_2.svg" alt="">
+				</div>
+
+				<img src="elems_of_design/book_lines.png" alt="" class="book_lines_top">
+				<img src="elems_of_design/circl_book.png" alt="" class="circl_book">
+
+				<div class="col-sm-7 mc_book_div">
+					<div class="book_combain" id="parallax_scene2">
+						<img src="elems_of_design/book.png" alt="" class="mc_book" data-wow-delay="0.5s" data-depth="0.30"> 
+						<!-- class + wow fadeInUp -->
+						<div class="mc_small_line" data-depth="0.10">
+							<div class="mc_small_line_text wow fadeInUp" data-wow-delay="0.3s">
+								Научим решать сложные <br>
+								задачки и разберем <br>
+								проблемные темы 
+							</div>
+							<img src="elems_of_design/mc_small_line.png" alt="">
+						</div>
+						<div class="mc_middle_line" data-depth="0.10">
+							<div class="mc_middle_line_text wow fadeInUp" data-wow-delay="0.3s">
+								Лайфхаки и фишки ЕГЭ/ОГЭ <br>
+								от высокобалльников
+							</div>
+							<img src="elems_of_design/mc_middle_line.png" alt="">
+						</div>
+						<div class="mc_big_line" data-depth="0.10">
+							<div class="mc_big_line_text wow fadeInUp" data-wow-delay="0.3s">
+								Расскажем все <br>
+								о поступлении в ТОПовый ВУЗ
+							</div>
+							<img src="elems_of_design/mc_big_line.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="mc_right">
+						<p class="mc_titel2 wow fadeInUp" data-wow-delay="0.2s"> Подзаголовок подзаголовок</p>
+						<p class="mc_text_bottom wow fadeInUp" data-wow-delay="0.5s">
+							Разнообразный и богатый опыт новая 
+							модель организационной деятельности 
+							требуют определения и уточнения позиций, 
+							занимаемых участниками в отношении 
+							поставленных задач. 
+							Разнообразный и богатый опыт новая 
+							модель организационной деятельности 
+							требуют определения и уточнения позиций, 
+							занимаемых участниками в отношении 
+							поставленных задач. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.what_is_mc -->
+
+	<div class="wrap_gallery_reviews">	
+	<section class="photo_galery" id="ph_gallery" style="background-color: ">
+		<div class="container">
+			<div class="row">
+				<div class="photo_awd">
+					<img src="elems_of_design/gallery_lines.png">
+					<div class="photo_titel">
+						<img src="elems_of_design/review_1.svg" alt="">
+						<p class="wow fadeInUp" data-wow-delay="0.2s">Фотогалерея</p>
+						<img src="elems_of_design/review_2.svg" alt="">
+					</div>
+					<a href="img/photo_lb_left_img_w800.png" class="lightzoom left_photo">
+						<span class="wrap">
+							<img src="img/photo_lb_left_img_w800.png" alt="">
+							<!-- <picture>
+							  <source media="(max-width: 577px)" srcset="img/photo_lb_left_img_w577.png">
+							  <source media="(min-width: 578px)" srcset="img/photo_lb_left_img_w800.png">
+							  <img src="img/photo_lb_left_img_w800.png" alt="Chris standing up holding his daughter Elva">
+							</picture> -->
+						</span>
+					</a>
+					<a href="img/photo_lb_rtl_img_w800.png" class="lightzoom right_tl">
+						<span class="wrap">
+							<img src="img/photo_lb_rtl_img_w800.png" alt="">
+						</span>
+					</a>
+					<a href="img/photo_lb_rtr_img_w800.png" class="lightzoom right_tr">
+						<span class="wrap">
+							<img src="img/photo_lb_rtr_img_w800.png" alt="">
+						</span>
+					</a>
+					<a href="img/photo_lb_rbl_img_w800.png" class="lightzoom right_bl">
+						<span class="wrap">
+							<img src="img/photo_lb_rbl_img_w800.png" alt="">
+						</span>
+					</a>
+					<a href="img/photo_lb_rbr_img_w800.png" class="lightzoom right_br">
+						<span class="wrap">
+							<img src="img/photo_lb_rbr_img_w800.png" alt="">
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="reviews_wrap">
+					<div class="reviews_titel">
+						<img src="elems_of_design/review_1.svg" alt="">
+						<p class="wow fadeInUp" data-wow-delay="0.2s">Отзывы</p>
+						<img src="elems_of_design/review_2.svg" alt="">
+					</div>
+					<div class="reviews_block">
+						<img class="bg_rv" src="elems_of_design/reviews_bg_lines.png">
+						<div class="but_left"><img src="elems_of_design/left.png" alt=""></div>
+						<div class="carusel_div">
+							<div class="scroll_div">
+								<div class="elem_carusel">
+									<img src="img/review_1.png" alt="">
+									<a href="" class="wow fadeInUp" data-wow-delay="0.2s">@almazonchik</a>
+									<p class="wow fadeInUp" data-wow-delay="0.5s">
+										Разнообразный и богатый опыт 
+										новая модель организационной 
+										деятельности требуют 
+										определения и уточнения 
+										позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач. Равным 
+										образом укрепление и развитие 
+										структуры позволяет оценить 
+										значение позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач.
+									</p>
+								</div>
+								<div class="elem_carusel">
+									<img src="img/review_2.png" alt="">
+									<a href="" class="wow fadeInUp" data-wow-delay="0.2s">@almazonchik</a>
+									<p class="wow fadeInUp" data-wow-delay="0.5s">
+										Разнообразный и богатый опыт 
+										новая модель организационной 
+										деятельности требуют 
+										определения и уточнения 
+										позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач. Равным 
+										образом укрепление и развитие 
+										структуры позволяет оценить 
+										значение позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач.
+									</p>
+								</div>
+								<div class="elem_carusel">
+									<img src="img/review_3.png" alt="">
+									<a href="" class="wow fadeInUp" data-wow-delay="0.2s">@almazonchik</a>
+									<p class="wow fadeInUp" data-wow-delay="0.5s">
+										Разнообразный и богатый опыт 
+										новая модель организационной 
+										деятельности требуют 
+										определения и уточнения 
+										позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач. Равным 
+										образом укрепление и развитие 
+										структуры позволяет оценить 
+										значение позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач.
+									</p>
+								</div>
+								<div class="elem_carusel">
+									<img src="img/review_4.png" alt="">
+									<a href="" class="wow fadeInUp" data-wow-delay="0.2s">@almazonchik</a>
+									<p class="wow fadeInUp" data-wow-delay="0.5s">
+										Разнообразный и богатый опыт 
+										новая модель организационной 
+										деятельности требуют 
+										определения и уточнения 
+										позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач. Равным 
+										образом укрепление и развитие 
+										структуры позволяет оценить 
+										значение позиций, занимаемых 
+										участниками в отношении 
+										поставленных задач.
+									</p>
+								</div>
+								<div class="elem_carusel">4</div>
+								<div class="elem_carusel">5</div>
+							</div>
+						</div>
+						<!-- /.carusel_div -->
+						<div class="but_right"><img src="elems_of_design/right.png" alt=""></div>
+					</div>
+
+				</div>
+				<!-- /.reviews_wrap -->
+			</div>
+		</div>
+	</section>
+	<!-- /.reviews -->
+	</div>
+	<!-- /.wrap_gallery_reviews -->
+
+	<section class="price">
+		<div class="container">
+			<div class="row">
+				<div class="price_titel">
+					<img src="elems_of_design/review_1.svg" alt="">
+					<p class="wow fadeInUp" data-wow-delay="0.2s">Цены</p>
+					<img src="elems_of_design/review_2.svg" alt="">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="wrap_hat">
+					<img src="elems_of_design/price_hat.png" alt="" class="pice_hat">
+					<img src="elems_of_design/hat_bottom.png" class="hat_circle">
+				</div>
+
+				<div class="col-sm-5 offset-sm-1 wrap_OGE">
+					<div class="yellow_div"></div>
+					<p class="train_oge wow fadeInUp" data-wow-delay="0.2s">ПОДГОТОВКА К ОГЭ</p>
+					<div class="left_div_OGE">
+						<img src="elems_of_design/price_lines_oge.png">
+						<div class="OGE_top">
+							<div class="left_div wow fadeInUp" data-wow-delay="0.5s">
+								Занятие ОГЭ <br>
+								<strong>90 минут</strong>
+							</div>
+							<div class="right_div wow fadeInUp" data-wow-delay="0.5s">
+								Пробный ОГЭ
+							</div>
+						</div>
+						<hr>
+						<div class="OGE_center">
+							<div class="left_div wow fadeInUp" data-wow-delay="0.5s">
+								1 предмет
+								<p>400 рублей</p>
+								2 предмета
+								<p>350 рублей</p>
+							</div>
+							<div class="right_div wow fadeInUp" data-wow-delay="0.5s">
+								1 предмет
+								<p>800 рублей</p>
+								2 предмета
+								<p>700 рублей</p>
+							</div>
+						</div>
+						<div class="OGE_bottom">
+							<div class="left_div wow fadeInUp" data-wow-delay="0.5s">
+								3 предмета и более
+								<p>300 рублей</p>
+							</div>
+							<div class="right_div wow fadeInUp" data-wow-delay="0.5s">
+								3 предмета и более
+								<p>600 рублей</p>
+							</div>
+						</div>
+					</div>
+					<!-- /.left_div_OGE -->
+				</div>
+				<!-- /.col-sm-5 -->
+				<div class="col-sm-5 wrap_EGE">
+					<p class="train_ege wow fadeInUp" data-wow-delay="0.2s">ПОДГОТОВКА К EГЭ</p>
+					<div class="right_div_EGE">
+						<img src="elems_of_design/right_div_ege_crop.png">
+						<img src="elems_of_design/right_div_ege.png">
+						<div class="EGE_top">
+							<div class="left_div wow fadeInUp" data-wow-delay="0.5s">
+								Занятие ОГЭ <br>
+								<strong>90 минут</strong>
+							</div>
+							<div class="right_div wow fadeInUp" data-wow-delay="0.5s">
+								Пробный ОГЭ
+							</div>
+						</div>
+						<hr>
+						<div class="EGE_center">
+							<div class="left_div wow fadeInUp" data-wow-delay="0.5s">
+								1 предмет
+								<p>500 рублей</p>
+								2 предмета
+								<p>1000 рублей</p>
+							</div>
+							<div class="right_div wow fadeInUp" data-wow-delay="0.5s">
+								1 предмет
+								<p>800 рублей</p>
+								2 предмета
+								<p>900 рублей</p>
+							</div>
+						</div>
+						<div class="EGE_bottom">
+							<div class="left_div wow fadeInUp" data-wow-delay="0.5s">
+								3 предмета и более
+								<p>400 рублей</p>
+							</div>
+							<div class="right_div wow fadeInUp" data-wow-delay="0.5s">
+								3 предмета и более
+								<p>800 рублей</p>
+							</div>
+						</div>
+					</div>
+					<!-- /.right_div_EGE -->
+					<p class="right_div_EGE_bottom_text wow fadeInUp" data-wow-delay="0.6s">*Цена действительна при оплате сразу комплекта из нескольких предметов</p>
+				</div>
+				<!-- /.col-sm-5 -->
+				
+				<!-- <div class="wrap_yellow">
+					<div class="yellow_div"></div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<!-- /.price -->
+
+	<section class="time_table" id="time_table">
+		<div class="container">
+			<div class="row">
+				<div class="tt_titel">
+					<img src="elems_of_design/left_gr.png" alt="">
+					<p class="wow fadeInUp" data-wow-delay="0.2s">Расписание</p>
+					<img src="elems_of_design/right_gr.png" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10 tt_wrap_col">
+					<div class="tt_div">
+						<div class="choose_date">
+							<img src="elems_of_design/keyboard-right-arrow-button.png" alt="">
+							<p>20-26 июля</p>
+							<img src="elems_of_design/keyboard-right-arrow-button-1.png" alt="">
+						</div>
+						<div class="choose_lesson">
+							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+							<div class="custom-select-ddd" style="width:180px;">
+								<select>
+									<option value="0">Предмет</option>
+									<option value="1">Audi</option>
+									<option value="2">BMW</option>
+									<option value="3">Citroen</option>
+									<option value="4">Ford</option>
+									<option value="5">Honda</option>
+									<option value="6">Jaguar</option>
+									<option value="7">Land Rover</option>
+									<option value="8">Mercedes</option>
+								</select>
+							</div>
+						</div>
+						<div class="choose_address">
+							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+							<div class="custom-select-ddd" style="width:180px;">
+								<select>
+									<option value="0">Адрес</option>
+									<option value="1">Audi</option>
+									<option value="2">BMW</option>
+									<option value="3">Citroen</option>
+									<option value="4">Ford</option>
+									<option value="5">Honda</option>
+									<option value="6">Jaguar</option>
+									<option value="7">Land Rover</option>
+									<option value="8">Mercedes</option>
+								</select>
+							</div>
+						</div>
+						<div class="choose_events">
+							<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+							<div class="custom-select-ddd" style="width:180px;">
+								<select>
+									<option value="0">События</option>
+									<option value="1">Audi</option>
+									<option value="2">BMW</option>
+									<option value="3">Citroen</option>
+									<option value="4">Ford</option>
+									<option value="5">Honda</option>
+									<option value="6">Jaguar</option>
+									<option value="7">Land Rover</option>
+									<option value="8">Mercedes</option>
+								</select>
+							</div>
+						</div>
+						<table>
+							<tr>
+								<th class="border_none"></th>
+								<th class="border_none">Пн</th>
+								<th>Вт</th> 
+								<th>Ср</th>
+								<th>Чт</th>
+								<th>Пт</th>
+								<th>Сб</th>
+								<th>Вс</th>
+							</tr>
+							<tr>
+								<td class="border_none"> 9:00 </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+							</tr>
+							<tr>
+								<td class="border_none"> 10:30 </td>
+								<td></td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29</td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29</td>
+								<td></td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29</td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29</td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29</td>
+							</tr>
+							<tr>
+								<td class="border_none"> 12:00 </td>
+								<td> <img src="elems_of_design/edit-tool.png" alt=""> Планерка </td>
+								<td></td>
+								<td> <img src="elems_of_design/edit-tool.png" alt=""> Планерка </td>
+								<td></td>
+								<td></td>
+								<td> <img src="elems_of_design/edit-tool.png" alt=""> Планерка </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="border_none"> 13:30 </td>
+								<td> <img src="elems_of_design/star.png" alt=""> Мастер - класс по алгебре </td>
+								<td> <img src="elems_of_design/star.png" alt=""> Мастер - класс по алгебре </td>
+								<td> <img src="elems_of_design/star.png" alt=""> Мастер - класс по алгебре </td>
+								<td></td>
+								<td> <img src="elems_of_design/star.png" alt=""> Мастер - класс по алгебре </td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="border_none"> 15:00 </td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29 </td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29 </td>
+								<td></td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29 </td>
+								<td> <img src="elems_of_design/megaphone.png" alt=""> Выступление в школе №29 </td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="border_none"> 16:30 </td>
+								<td></td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td></td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+								<td></td>
+								<td> <img src="elems_of_design/black-user-shape.png" alt=""> Английский язык </td>
+							</tr>
+							<tr>
+								<td class="border_none"> 18:00 </td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td> <img src="elems_of_design/edit-tool.png" alt=""> Планерка </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="border_none"> 19:30 </td>
+								<td> <img src="elems_of_design/check.png" alt=""> Пробный ЕГЭ </td>
+								<td></td>
+								<td> <img src="elems_of_design/check.png" alt=""> Пробный ЕГЭ </td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td> <img src="elems_of_design/check.png" alt=""> Пробный ЕГЭ </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="col-sm-10 tt_wrap_form">
+					<form action="#" class="tt_form">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Телефон">
+						<button>Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</secrion>
+	<!-- /.time_table -->
+
+	<section class="more_questions">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 offset-sm-1">
+					<div class="q_left_div">
+						<img src="img/more_questions.png" alt="">
+						Директор
+						<p class="name wow fadeInUp" data-wow-delay="0.2s">Гилемзянов Алмаз</p>
+						Разнообразный и богатый опыт новая <br>
+						модель организационной деятельности 
+					</div>
+				</div>
+				<div class="col-sm-6 ddd">
+					<div class="q_right_div">
+						<p class="q_titel wow fadeInUp" data-wow-delay="0.2s">ОСТАЛИСЬ ВОПРОСЫ?</p>
+						Напишите нам, чтоб получить <br>
+						бесплатную консультацию
+						<form action="">
+							<input type="text" placeholder="Имя">
+							<input type="phone" placeholder="Телефон">
+							<input type="email" placeholder="Email">
+							<textarea name="question" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+							<button type="submit">Отправить</button>
+							<label class="l_confidence">
+								Я согласен с политикой конфиденциальности		
+								<input type="checkbox">
+								<span></span>
+							</label>
+							<!-- <p class="p_confidence">
+								<input type="checkbox" id="checkbox_id">
+
+								<label for="checkbox_id">Я согласен с политикой конфиденциальности</label>
+							</p> -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.more_questions -->
+
+	<section class="contacts"  id="map">
+		<div class="contacts_mask"></div>
+		<div class="container">
+			<div class="row">
+				<div class="contacts_titel">
+					<img src="elems_of_design/review_1.svg" alt="">
+					<p class="wow fadeInUp" data-wow-delay="0.2s">Контакты</p>
+					<img src="elems_of_design/review_2.svg" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 map_col">
+					<!-- <img src="elems_of_design/contacts_layer_2.png" alt="" class="left_img"> -->
+
+					<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.556649780131!2d37.63570091585692!3d55.766203480556946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a66bd4b4e5b%3A0x56b14a234e6b33c9!2z0JzRj9GB0L3QuNGG0LrQsNGPINGD0LsuLCAzNSwg0JzQvtGB0LrQstCwLCAxMDEwMDA!5e0!3m2!1sru!2sru!4v1542097401025" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+					
+					<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMn1cZ-5hccave8YTS1X_SVqS73pFdlgM"></script> -->
+					<div class="" id="map_google" style="height: 400px"> </div>
+
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMn1cZ-5hccave8YTS1X_SVqS73pFdlgM&callback=initMap" async defer></script>
+					<script type="text/javascript">
+						function initMap() {
+							var coordinates = {lat: 55.765058, lng: 37.639698};
+							var map = new google.maps.Map(document.getElementById('map_google'), {
+								center: coordinates,
+								zoom: 16
+							});
+							var image = "elems_of_design/map_circle.svg";
+							var marker = new google.maps.Marker({
+								position: coordinates,
+								map: map,
+								icon: image
+							});
+							var color = [
+							  {
+							    "featureType": "administrative.land_parcel",
+							    "elementType": "labels",
+							    "stylers": [
+							      {
+							        "visibility": "off"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "landscape",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#1bd4e0"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#289fa7"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi",
+							    "elementType": "labels.text",
+							    "stylers": [
+							      {
+							        "visibility": "off"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi.business",
+							    "stylers": [
+							      {
+							        "visibility": "off"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi.park",
+							    "elementType": "labels.text",
+							    "stylers": [
+							      {
+							        "visibility": "off"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#633f85"
+							      },
+							      {
+							        "visibility": "simplified"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road",
+							    "elementType": "geometry.fill",
+							    "stylers": [
+							      {
+							        "color": "#633f85"
+							      },
+							      {
+							        "weight": 0.5
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.arterial",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#f4f586"
+							      },
+							      {
+							        "weight": 4.5
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.highway",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#f4f586"
+							      },
+							      {
+							        "visibility": "on"
+							      },
+							      {
+							        "weight": 1.5
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.local",
+							    "elementType": "labels",
+							    "stylers": [
+							      {
+							        "visibility": "off"
+							      }
+							    ]
+							  }
+							];
+							map.setOptions({styles: color});
+						}
+						initMap();
+					</script>
+
+					<!-- <div id="map" class="map"> -->
+						<!-- Яндекс maps -->
+					 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ"></script> -->
+					 	<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10b205c5739495c6a0a9892424925e79535f4ca283a2cf64cf7d3d120992b995&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> -->
+					<!-- </div> -->
+				</div>
+				<!-- /.col-sm-6 -->
+				<div class="col-sm-5 contacts_right_col">
+					<p class="titel wow fadeInUp" data-wow-delay="0.3s">Телефон</p>
+					<a href="tel:+78142332211" class="contacts_phone_nav wow fadeInUp" data-wow-delay="0.5s">+ 7 (900) 00-00-000</a>
+					<p class="titel wow fadeInUp" data-wow-delay="0.3s">Адреса:</p>
+					<p class="wow fadeInUp" data-wow-delay="0.5s">
+						Адрес школыАдрес школыАдрес школы <br>
+						Адрес школыАдрес школы
+					</p>
+					<p class="wow fadeInUp" data-wow-delay="0.5s">
+						Адрес школыАдрес школыАдрес школы <br>
+						Адрес школыАдрес школы
+					</p>
+					<p class="wow fadeInUp" data-wow-delay="0.5s">
+						Адрес школыАдрес школыАдрес школы <br>
+						Адрес школыАдрес школы
+					</p>
+					<p class="wow fadeInUp" data-wow-delay="0.5s">
+						Адрес школыАдрес школыАдрес школы <br>
+						Адрес школыАдрес школы
+					</p>
+				</div>
+				<!-- /.col-sm-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.contacts -->
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-11 offset-sm-1">
+					Копирайт 2018
+					<div class="footer_right">
+					<a href="#">
+						<img src="elems_of_design/footer_instagram.png" alt="">
+					</a>
+					<a href="#">
+						<img src="elems_of_design/footer_vk.png" alt="">
+					</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		document.getElementsByClassName('wrap_for_img')[0].style.maxWidth = screen.width + 'px';
+
+		var wr_OGE = document.getElementsByClassName('wrap_OGE')[0];
+		var left_div_OGE = wr_OGE.getElementsByClassName('left_div_OGE')[0];
+		var yellow_div = document.getElementsByClassName('yellow_div')[0];
+		yellow_div.style.left = -1 * wr_OGE.offsetLeft + 'px';
+
+		// var left_div_bottom = left_div_OGE.getElementsByClassName('OGE_bottom')[0];
+
+		if (window.innerWidth < 750) {
+			var card_Ege = document.getElementsByClassName('yellow_div')[0]
+			// yellow_div.style.height = screen.width + 'px';
+			var left_div_center = left_div_OGE.getElementsByClassName('OGE_center')[0];
+			yellow_div.style.height = left_div_center.offsetHeight + 11 + 'px';
+
+			// Change places
+			var row = document.getElementsByClassName('more_questions')[0].getElementsByClassName('row')[0];
+			row.appendChild(row.childNodes[1]);
+
+			var big_wrap_more_q = document.getElementsByClassName('more_questions')[0];
+			var form_more_q = big_wrap_more_q.getElementsByTagName('form')[0];
+			var button_more_q = big_wrap_more_q.getElementsByTagName('button')[0];
+			form_more_q.appendChild(button_more_q);
+
+			document.getElementsByClassName('top')[0].style.maxHeight = (screen.height - 85) + 'px';
+		} else {
+			document.getElementsByClassName('top')[0].style.maxHeight = (screen.height - 115) + 'px';
+		}
+
+		window.addEventListener('resize', function() {
+			yellow_div.style.left = -1 * wr_OGE.offsetLeft + 'px';
+			// if (window.innerWidth < ) {
+			// 	yellow_div.style.height = left_div_center.offsetHeight + 11 + 'px';
+			// }
+		});
+
+	</script>
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<!-- <script src="js/jQuery.js"></script> -->
+	<script src="js/parallax.js"></script>
+
+	<!-- For animation -->
+	<script src="js/wow.min.js"></script>
+
+	<!-- <script src="js/carusel_custom.js"></script> -->
+	<script src="js/carusel_make_new_custom.js"></script>
+	<script src="js/choose_town.js"></script>
+	
+	<script>
+		// For animation
+		new WOW().init();
+
+		// Add scroll for navbar
+		$(document).ready(function(){
+			$('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+				var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+				if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+					$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 700); // анимируем скроолинг к элементу scroll_el
+				}
+				return false; // выключаем стандартное действие
+			});
+		});
+		
+		// Add clouse/show events
+		var x_letter = document.getElementsByClassName('letter_modal_x')[0];
+		x_letter.addEventListener('click', function(e) {
+			var sheet = e.target.parentNode;
+			// .style.display = 'none';
+			$(sheet).fadeOut(400, 'swing', function(){});
+		});
+
+		var tooltip_button = document.getElementById("tooltip_town");
+		tooltip_button.addEventListener('click', function(e) {
+			e.target.parentNode.style.display = 'none';
+		});
+
+		var show_town = document.getElementById('user-city');
+		show_town.addEventListener('click', function() {
+			tooltip_button.parentNode.style.display = '';
+		});
+
+		$(document).ready(function() {
+			// Add carousel script for teachers
+			var but_left = document.getElementsByClassName('but_left')[0];
+			var but_right = document.getElementsByClassName('but_right')[0];
+			var carusel_div = document.getElementsByClassName('carusel_div')[0];
+			function change_to_mob() {
+				carusel_div.parentNode.appendChild(but_left);
+				carusel_div.parentNode.appendChild(but_right);
+			}
+			function change_to_desct() {
+				carusel_div.parentNode.appendChild(but_left);
+				carusel_div.parentNode.appendChild(carusel_div);
+				carusel_div.parentNode.appendChild(but_right);
+			}
+			carousel(carusel_div, 2, but_left, but_right, 577, change_to_mob, change_to_desct);
+
+			// Add carousel script for reviews
+			var but_left2 = document.getElementsByClassName('but_left')[1];
+			var but_right2 = document.getElementsByClassName('but_right')[1];
+			var carusel_div2 = document.getElementsByClassName('carusel_div')[1];
+			function change_to_mob2() {
+				carusel_div2.parentNode.appendChild(but_left2);
+				carusel_div2.parentNode.appendChild(but_right2);
+			}
+			function change_to_desct2() {
+				carusel_div2.parentNode.appendChild(but_left2);
+				carusel_div2.parentNode.appendChild(carusel_div2);
+				carusel_div2.parentNode.appendChild(but_right2);
+			}
+			carousel(carusel_div2, 4, but_left2, but_right2, 577, change_to_mob2, change_to_desct2);
+
+			// Add choose_town script
+			var input = document.getElementById('input_choose_town');
+			var wrap_block = document.getElementById('table_choose_town');
+			new_input(input, wrap_block);
+		});
+	</script>
+
+	<!-- <script src="js/parallax.js"></script> -->
+	<script>
+		var scene = document.getElementById('parallax_scene1');
+		var scene2 = document.getElementById('parallax_scene2');
+		var parallax = new Parallax(scene);
+		var parallax2 = new Parallax(scene2);
+	</script>
+
+	<!-- For select_custom -->
+	<script src="js/select_custom.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		});
+	</script>
+
+	<!-- For city -->
+	<script type="text/javascript">
+	  window.onload = function () {
+	      jQuery("#user-city").text(ymaps.geolocation.city);
+	  }
+	  $(document).ready(function() {
+	  	var town_titel = document.getElementsByClassName('top')[0].getElementsByClassName('big_text')[0];
+		// Нужно будет закоментить если устанавливаешь с сервера название города
+		// town_titel.innerHTML += ymaps.geolocation.city + '!'; 
+		town_titel.innerHTML += document.getElementById('user-city').innerHTML + '!'; 
+	  });    
+	  document.getElementById('live_button_ex').addEventListener('click', function(e) {
+	  		if (this.parentNode.style.right == "") {
+	  			this.parentNode.style.right = '-185px';
+	  			this.src = "elems_of_design/keyboard-right-arrow-button@2x.png";
+	  			
+	  		} else if (this.parentNode.style.right == "-185px") {
+	  			this.parentNode.style.right = '145px';
+	  			this.src = "elems_of_design/but_live_letter-x.png"
+
+	  		} else {
+	  			this.parentNode.style.right = '-185px';
+	  			this.src = "elems_of_design/keyboard-right-arrow-button@2x.png";
+	  		}
+	  });
+	  $(document).ready(function() {
+			function ch_show() {
+				var sheet = document.getElementsByClassName('take_lesson_modal')[0];
+				if (sheet.style.display != 'none') {
+					$(sheet).fadeOut(400, 'swing', function(){});
+				} else {	
+					$(sheet).fadeIn(400, 'swing', function(){});	
+				}
+			}
+			setTimeout(ch_show, 3000);
+			// 1250
+
+			// document.getElementsByClassName
+	  })
+	</script>
+
+	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+	<!-- For gallery show big img -->
+	<link rel="stylesheet" href="lightzoom_v1.0.1/style.css" type="text/css">
+	<script type="text/javascript" src="lightzoom_v1.0.1/lightzoom.js"></script>
+	<script>
+		jQuery('.lightzoom').lightzoom({speed: 400, imgPadding: 0, viewTitle: false, overlayOpacity: '0.8'});</script>
+	</script>
+		
+
+
+  	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
