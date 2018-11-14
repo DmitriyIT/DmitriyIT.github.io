@@ -238,13 +238,14 @@ header nav .nav-item a {
 
 .wrap_for_img {
 	position: absolute;
+	max-width: 1500px;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	height: 1000px;
+	height: 1200px;
 	overflow: hidden;
 }
 .many_bg_img {
@@ -1272,7 +1273,6 @@ header nav .nav-item a {
 	margin-bottom: 12px;
 }
 .tt_wrap_col {
-	overflow-x: scroll;
 	margin: auto;
 }
 .tt_wrap_form {
