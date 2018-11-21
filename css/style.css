@@ -191,7 +191,9 @@ header nav .nav-item a {
 }
 .letter_modal_x {
 	float: right;
-	margin-top: 25px;
+	/*margin-top: 25px;*/
+	margin-top: 18px;
+	margin-right: 0px;
 	cursor: pointer;
 }
 .titel_tl {
@@ -200,11 +202,13 @@ header nav .nav-item a {
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 19px;
-	margin-top: 110px;
+	margin-top: 40px;
 	margin-bottom: 20px;
+	margin-left: 40px;
 }
 .text_tl {
 	max-width: 280px;
+	margin-left: 49px;
 }
 .take_lesson_modal form {
 	text-align: center;
@@ -228,6 +232,8 @@ header nav .nav-item a {
 .take_lesson_modal form button {
 	width: 267px;
 	height: 45px;
+	position: relative;
+	z-index: 2;
 	border-radius: 23px;
 	border: none;
 	background-color: #602272;
@@ -236,7 +242,7 @@ header nav .nav-item a {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 46px;
-	margin-top: 5px;
+	/*margin-top: 5px;*/
 }
 .Open_Book_modal {
 	position: absolute;
@@ -800,12 +806,12 @@ header nav .nav-item a {
 }
 .mc_right {
 	padding-left: 50px;
-	margin-top: 95px;
+	/*margin-top: 95px;*/
 }
 .mc_titel2 {
 	color: #f4f586;
 	font-family: "Muller Bold";
-	font-size: 24px;
+	font-size: 21px;
 	font-weight: 400;
 	line-height: 16px;
 }
@@ -1575,6 +1581,9 @@ header nav .nav-item a {
 	font-weight: 500;
 	line-height: 19px;
 	margin-bottom: 10px;
+}
+.contacts_right_col a {
+	color: #fff;
 }
 .contacts_phone_nav {
 	color: #ffffff;

@@ -80,6 +80,9 @@
 	.contacts .map {
 		padding-left: 90px;
 	}
+	.mc_right {
+		margin-top: -30px;
+	}
 }
 @media screen and (min-width:577px) and (max-width:1000px) {
 	.top {
@@ -146,6 +149,12 @@
 		font-family: "Helvetica Neue Cyr";
 		max-width: 230px;
 		margin-top: 2vh;
+	}
+	.titel_tl {
+		margin-left: 0px;
+	}
+	.text_tl {
+		margin-left: 0px;
 	}
 	.top {
 		padding-left: 0 !important;
