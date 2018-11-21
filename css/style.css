@@ -1,3 +1,12 @@
+.gm-control-active,
+.gm-style-mtc > div,
+.gmnoprint > div,
+.gm-svpc {
+  /*background-color: #f63981 !important;*/
+	display: none;
+	/*background-color: #4fc1d0 !important;*/
+}
+
 header {
 }
 body {
@@ -84,7 +93,15 @@ header nav .nav-item a {
 	line-height: 19px;
 }
 .choose_town_modal > div > button {
-	display: none;
+	/*display: none;*/
+	display: block;
+	margin-top: 20px;
+	margin-right: 30px;
+	opacity: 0.9;
+}
+.choose_town_modal > div > button > span {
+	color: #fff;
+	font-size: 2rem;
 }
 .choose_town_modal form {
 	display: block;
@@ -95,6 +112,8 @@ header nav .nav-item a {
 	border-radius: 23px;
 	border: none;
 	padding-left: 15px;
+	font-size: 14px;
+	color: rgba(109, 109, 109);
 	background-color: #ffffff;
 }
 .choose_town_modal form button {
@@ -152,8 +171,10 @@ header nav .nav-item a {
 }
 .take_lesson_modal {
 	position: fixed;
-	top: 22vh;
-	left: 172px;
+	/*top: 22vh;*/
+	/*left: 172px;*/
+	top: calc(50vh - 260px);
+	left: calc(50vw - 211px);
 	z-index: 201;
 	width: 422px;
 	height: 535px;
@@ -298,6 +319,7 @@ header nav .nav-item a {
 	height: 44px;
 	border-radius: 23px;
 	background-color: #fff;
+	font-size: 14px;
 	border: none;
 	margin-bottom: 10px;
 	padding-left: 12px;
@@ -316,7 +338,7 @@ header nav .nav-item a {
 	font-family: "Helvetica Neue Cyr";
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 16px;
+	line-height: 50px;
 }
 .button_live_v {
 	/*position: relative;*/
@@ -712,7 +734,7 @@ header nav .nav-item a {
 .book_combain > img {
 	position: absolute;
 	top: -22px;
-	left: -16px;
+	left: -25px !important;
 	height: 580px;
 	width: auto;
 }
@@ -1347,6 +1369,7 @@ header nav .nav-item a {
 	display: inline-block;
 	width: 272px;
 	height: 46px;
+	font-size: 14px;
 	border-radius: 23px;
 	border: 2px solid #602272;
 	background-color: #ffffff;
@@ -1363,9 +1386,9 @@ header nav .nav-item a {
 	background-color: #602272;
 	color: #f4f586;
 	font-family: "Helvetica Neue Cyr";
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 500;
-	line-height: 16px;
+	line-height: 56px;
 }
 
 /*** 8view /.time_table ***/

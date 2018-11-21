@@ -4,6 +4,13 @@
 		min-width: 960px;
 		max-width: 1300px;
 	}
+	.table_choose_town {
+		overflow-x: scroll;
+		width: calc(100% - 40px);
+	}
+	.table_choose_town li {
+		padding-right: 10px;
+	}
 	.wrap_for_img {
 		width: 100vw;
 		min-width: 960px;
