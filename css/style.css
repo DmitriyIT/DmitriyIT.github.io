@@ -192,7 +192,7 @@ header nav .nav-item a {
 .letter_modal_x {
 	float: right;
 	/*margin-top: 25px;*/
-	margin-top: 18px;
+	margin-top: 28px;
 	margin-right: 0px;
 	cursor: pointer;
 }
@@ -204,11 +204,17 @@ header nav .nav-item a {
 	line-height: 19px;
 	margin-top: 40px;
 	margin-bottom: 20px;
-	margin-left: 40px;
+	margin-left: 49px;
+	max-width: 280px;
 }
 .text_tl {
 	max-width: 280px;
 	margin-left: 49px;
+}
+.text_tl2 {
+	padding-left: 49px;
+	max-width: 280px;
+	margin-bottom: -11px;
 }
 .take_lesson_modal form {
 	text-align: center;

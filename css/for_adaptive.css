@@ -151,10 +151,15 @@
 		margin-top: 2vh;
 	}
 	.titel_tl {
-		margin-left: 0px;
+		margin-left: 20px;
 	}
 	.text_tl {
-		margin-left: 0px;
+		font-size: 15px;
+		margin-left: 20px;
+	}
+	.text_tl2 {
+		font-size: 15px;
+		padding-left: 20px;
 	}
 	.top {
 		padding-left: 0 !important;
@@ -559,6 +564,15 @@
 }
 
 @media (max-width: 320px) {
+	.titel_tl {
+		margin-left: 10px;
+	}
+	.text_tl {
+		margin-left: 10px;
+	}
+	.text_tl2 {
+		padding-left: 10px;
+	}
 	.awd1 {
 		width: 150px;
 		top: 415px !important;
