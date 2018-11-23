@@ -44,7 +44,8 @@
 	height: 27px;
 	margin-top: 10px;
 	margin-right: 3px;
-	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-radius: 15px;
 	border: 2px solid #f4f586;
 	background-color: #fff;
